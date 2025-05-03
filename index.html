@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty Lab</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body class="font-sans bg-white text-black">
+
+<!-- Logo Section -->
+<div class="text-center py-4">
+    <img src="https://via.placeholder.com/100x40?text=LOGO" alt="Beauty Lab Logo" class="mx-auto" />
+</div>
+
+<!-- Navigation -->
+<nav class="flex justify-between items-center px-6 uppercase text-xs tracking-widest">
+    <div class="space-y-1">
+        <a href="#" class="block">Home</a>
+        <a href="#" class="block">Shop</a>
+        <a href="#" class="block">About</a>
+        <a href="#" class="block">Portfolio</a>
+        <a href="#" class="block">All Pages</a>
+    </div>
+    <a href="#" class="border border-black px-4 py-2 rounded-full text-xs hover:bg-black hover:text-white transition">Book Appointment</a>
+</nav>
+
+<!-- Hero Section -->
+<section class="relative h-screen bg-black text-white flex items-center justify-center">
+    <img src="https://via.placeholder.com/1200x800" class="absolute inset-0 w-full h-full object-cover opacity-60" />
+    <div class="relative z-10 text-center">
+        <div class="bg-white text-black px-8 py-6 inline-block">
+            <div class="flex justify-between text-xs font-light">
+                <p>Your Skin. Specialised.</p>
+                <p>Business Address<br/>City Name</p>
+            </div>
+            <h1 class="text-4xl font-bold my-4">BEAUTY LAB.</h1>
+            <p class="text-sm uppercase tracking-widest">Plastic Surgery • Enhancement</p>
+            <a href="#" class="block mt-4 text-right text-xs underline">Book Now →</a>
+        </div>
+    </div>
+</section>
+
+<!-- Marquee -->
+<div class="bg-black text-white py-2 overflow-hidden whitespace-nowrap">
+    <p class="inline-block animate-marquee text-sm tracking-wide">LAVISH SKIN — LAVISH SKIN — LAVISH SKIN — LAVISH SKIN —</p>
+</div>
+<style>
+    .animate-marquee {
+        animation: marquee 20s linear infinite;
+    }
+
+    @keyframes marquee {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+</style>
+
+<!-- About and Cards Section -->
+<section class="bg-white px-8 py-16 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <!-- About -->
+    <div class="md:col-span-1 flex flex-col items-center md:items-start">
+        <img src="https://via.placeholder.com/100" alt="Artist" class="mb-4 rounded" />
+        <h2 class="text-xl font-semibold mb-2">About the Artist</h2>
+        <p class="text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros vitae augue facilisis laoreet. Proin non nulla vel elit pretium gravida.</p>
+    </div>
+
+    <!-- Cards -->
+    <div class="md:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="text-center">
+            <img src="https://via.placeholder.com/300x400" class="w-full h-auto mb-2" alt="Product 1" />
+            <p class="text-sm">A rejuvenating skin serum that promotes elasticity and glow. Ideal for daily use.</p>
+        </div>
+        <div class="text-center">
+            <img src="https://via.placeholder.com/300x400" class="w-full h-auto mb-2" alt="Product 2" />
+            <p class="text-sm">Hydrating facial mist for instant freshness. Perfect for on-the-go skincare.</p>
+        </div>
+        <div class="text-center">
+            <img src="https://via.placeholder.com/300x400" class="w-full h-auto mb-2" alt="Product 3" />
+            <p class="text-sm">Gentle exfoliating cleanser for clear, radiant skin. Use 2–3 times per week.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-pink-100 py-6 text-center">
+    <div class="flex justify-center space-x-6">
+        <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fab fa-twitter fa-lg"></i></a>
+    </div>
+</footer>
+</body>
+
+</html>
