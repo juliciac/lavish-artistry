@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beauty Lab</title>
+    <title>Lavish Skin Artistry - Rickia Coates</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
@@ -12,33 +12,40 @@
 <body class="font-sans bg-white text-black">
 
 <!-- Logo Section -->
-<div class="text-center py-4">
-    <img src="https://via.placeholder.com/100x40?text=LOGO" alt="Beauty Lab Logo" class="mx-auto" />
-</div>
+<!--<div class="text-center py-4">-->
+<!--    <img class="h-48 w-96 object-contain" src="lavish-skin-logo.png" alt="Lavish Skin Artistry - Rickia Coates"-->
+<!--    class="mx-auto" />-->
+<!--</div>-->
 
 <!-- Navigation -->
 <nav class="flex justify-between items-center px-6 uppercase text-xs tracking-widest">
-    <div class="space-y-1">
-        <a href="#" class="block">Home</a>
-        <a href="#" class="block">Shop</a>
-        <a href="#" class="block">About</a>
-        <a href="#" class="block">Portfolio</a>
-        <a href="#" class="block">All Pages</a>
+    <!-- Navigation Links (Horizontally Aligned) -->
+    <div class="flex space-x-6">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="shop.html" class="hover:underline">Shop</a>
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="services.html" class="font-bold hover:underline">Services</a>
+        <a href="ombre-brows.html" class="font-bold hover:underline">Ombre Brows</a>
+        <a href="faq.html" class="hover:underline">FAQ</a>
     </div>
-    <a href="#" class="border border-black px-4 py-2 rounded-full text-xs hover:bg-black hover:text-white transition">Book Appointment</a>
+
+    <!-- Book Appointment Button -->
+    <a href="#" class="border border-black px-4 py-2 rounded-full text-xs hover:bg-black hover:text-white transition">
+        Book Appointment
+    </a>
 </nav>
 
 <!-- Hero Section -->
 <section class="relative h-screen bg-black text-white flex items-center justify-center">
-    <img src="https://via.placeholder.com/1200x800" class="absolute inset-0 w-full h-full object-cover opacity-60" />
+    <img src="black-skin.jpg" class="absolute inset-0 w-full h-full object-cover opacity-60" />
     <div class="relative z-10 text-center">
         <div class="bg-white text-black px-8 py-6 inline-block">
             <div class="flex justify-between text-xs font-light">
-                <p>Your Skin. Specialised.</p>
-                <p>Business Address<br/>City Name</p>
+                <p>Where Beauty</br>Meets Mastery</p>
+                <p>7310 Ritchie Hwy Ste 200<br/>Glen Burnie, MD</p>
             </div>
-            <h1 class="text-4xl font-bold my-4">BEAUTY LAB.</h1>
-            <p class="text-sm uppercase tracking-widest">Plastic Surgery • Enhancement</p>
+            <h1 class="text-4xl font-bold my-4"><span class="bg-yellow-300">LAVISH SKIN</span> ARTISTRY</h1>
+            <p class="text-sm uppercase tracking-widest">WAXING/SUGARING • SEMI-PERMANENT MAKE-UP</p>
             <a href="#" class="block mt-4 text-right text-xs underline">Book Now →</a>
         </div>
     </div>
@@ -46,7 +53,8 @@
 
 <!-- Marquee -->
 <div class="bg-black text-white py-2 overflow-hidden whitespace-nowrap">
-    <p class="inline-block animate-marquee text-sm tracking-wide">LAVISH SKIN — LAVISH SKIN — LAVISH SKIN — LAVISH SKIN —</p>
+    <p class="inline-block animate-marquee text-sm tracking-wide">CLEANSE • EXFOLIATE • HYDRATE • STAY LAVISH, XO
+    </p>
 </div>
 <style>
     .animate-marquee {
@@ -68,34 +76,92 @@
 <section class="bg-white px-8 py-16 grid grid-cols-1 md:grid-cols-4 gap-8">
     <!-- About -->
     <div class="md:col-span-1 flex flex-col items-center md:items-start">
-        <img src="https://via.placeholder.com/100" alt="Artist" class="mb-4 rounded" />
-        <h2 class="text-xl font-semibold mb-2">About the Artist</h2>
-        <p class="text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros vitae augue facilisis laoreet. Proin non nulla vel elit pretium gravida.</p>
+        <img src="lavish-skin-logo.png" alt="Artist" class="mb-4 rounded" />
+        <h2 class="text-xl font-semibold mb-2">STAY LAVISH, XO.</h2>
+        <p class="text-sm leading-relaxed">Lavish Skin Artistry is a privately owned esthetics suite specializing in full body waxing and sugaring, skincare treatments and permeanent make-up services. My services are inclusive for everybody and I enjoy helping people experience self-care, assistance with their grooming and overall boosted confidence. I use sugar, soft and hard wax depending on the skin type, sensitivity and area being waxed. I also offer customized vajacials. They are tailored to treat skin proned to ingrown hairs and discoloration and over all comfort.</p>
     </div>
 
     <!-- Cards -->
     <div class="md:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-6">
-        <div class="text-center">
-            <img src="https://via.placeholder.com/300x400" class="w-full h-auto mb-2" alt="Product 1" />
-            <p class="text-sm">A rejuvenating skin serum that promotes elasticity and glow. Ideal for daily use.</p>
+        <!-- Card 1 -->
+        <div class="flex flex-col items-center text-center bg-gray-900 rounded-lg shadow aspect-square justify-center p-6">
+            <img src="brazilian_waxing.jpg" alt="Brazilian Waxing"
+                 class="border-4 border-gray-50/75 w-32 h-32 object-cover rounded-full mb-4" />
+            <div class="bg-yellow-300 text-black font-semibold text-sm px-2 py-1 mb-2 rounded">
+                BRAZILIAN WAXING
+            </div>
+            <p class="text-sm text-gray-50 min-h-[160px]">
+                Say goodbye to stubble and hello to smooth confidence! Our Brazilian Waxing removes all hair from the front to the back, including labia and butt strip. Choose a completely nude look or keep a stylish strip. Walk away feeling silky, clean, and empowered. Book now for flawless skin!
+                </br>
+                ✨
+            </p>
         </div>
-        <div class="text-center">
-            <img src="https://via.placeholder.com/300x400" class="w-full h-auto mb-2" alt="Product 2" />
-            <p class="text-sm">Hydrating facial mist for instant freshness. Perfect for on-the-go skincare.</p>
+
+        <!-- Card 2 -->
+        <div class="flex flex-col items-center text-center bg-gray-900 rounded-lg shadow aspect-square justify-center p-6">
+            <img src="body_sugaring.jpg" alt="Body Sugaring"
+                 class="border-4 border-gray-50/75 w-32 h-32 object-cover rounded-full mb-4" />
+            <div class="bg-yellow-300 text-black font-semibold text-sm px-2 py-1 mb-2 rounded">
+                BODY SUGARING
+            </div>
+            <p class="text-sm text-gray-50 min-h-[160px]">
+                Experience the natural magic of body sugaring! Our sweet blend of sugar, lemon, and water gently removes hair, reduces ingrowns, and slows regrowth. It’s perfect for sensitive skin and leaves you smooth, soft, and glowing. Feel pampered, polished, and radiant after every session. Your skin will love you!
+                </br>
+                ✨
+            </p>
         </div>
-        <div class="text-center">
-            <img src="https://via.placeholder.com/300x400" class="w-full h-auto mb-2" alt="Product 3" />
-            <p class="text-sm">Gentle exfoliating cleanser for clear, radiant skin. Use 2–3 times per week.</p>
+
+        <!-- Card 3 -->
+        <div
+                class="flex flex-col items-center text-center bg-gray-900 rounded-lg shadow aspect-square justify-center p-6">
+            <img src="powder_brows.jpg" alt="Powder Brows"
+                 class="border-4 border-gray-50/75 w-32 h-32 object-cover rounded-full mb-4" />
+            <div class="bg-yellow-300 text-black font-semibold text-sm px-2 py-1 mb-2 rounded">
+                POWDER BROWS
+            </div>
+            <p class="text-sm text-gray-50 min-h-[160px]">
+                Wake up to perfect brows every day! Ombre Brows is a semi-permanent makeup technique giving you a soft,
+                natural, and makeup-ready look. It’s ideal for enhancing your brow shape with a flawless finish that lasts. Skip the brow pencil—embrace effortlessly beautiful arches. Ready for brow perfection?
+                </br>
+                ✨
+            </p>
         </div>
     </div>
+
 </section>
 
 <!-- Footer -->
-<footer class="bg-pink-100 py-6 text-center">
-    <div class="flex justify-center space-x-6">
-        <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fab fa-instagram fa-lg"></i></a>
-        <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fab fa-facebook fa-lg"></i></a>
-        <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fab fa-twitter fa-lg"></i></a>
+<!-- Footer -->
+<footer class="bg-yellow-300 py-10 px-6">
+    <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left max-w-6xl mx-auto space-y-6 md:space-y-0">
+
+        <!-- Contact Info -->
+        <div class="space-y-2">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-phone-alt text-gray-700"></i>
+                <span class="text-gray-700 text-sm">(410) 864-9141</span>
+            </div>
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-envelope text-gray-700"></i>
+                <span class="text-gray-700 text-sm">info@lavishskinartistry.com</span>
+            </div>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex space-x-6">
+            <a href="#" class="text-gray-700 hover:text-gray-900"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="text-gray-700 hover:text-gray-900"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="text-gray-700 hover:text-gray-900"><i class="fab fa-twitter fa-lg"></i></a>
+        </div>
+
+        <!-- Business Hours -->
+        <div class="text-sm text-gray-700 space-y-1">
+            <p><strong>Hours</strong></p>
+            <p>TUE: 5:30PM - 8:30PM</p>
+            <p>WED: 10AM - 8PM</p>
+            <p>FRI: 8AM - 2PM</p>
+            <p>SAT: 9AM - 4PM</p>
+        </div>
     </div>
 </footer>
 </body>
