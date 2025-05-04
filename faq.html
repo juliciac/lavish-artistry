@@ -8,21 +8,22 @@
 </head>
 <body class="font-sans bg-white text-black">
 
-<!-- Logo -->
-<div class="text-center py-4">
-    <img src="https://via.placeholder.com/100x40?text=LOGO" alt="Beauty Lab Logo" class="mx-auto" />
-</div>
-
 <!-- Navigation -->
-<nav class="flex justify-between items-center px-6 uppercase text-xs tracking-widest mb-10">
-    <div class="space-y-1">
-        <a href="index.html" class="block">Home</a>
-        <a href="shop.html" class="block">Shop</a>
-        <a href="about.html" class="block">About</a>
-        <a href="services.html" class="block">Services</a>
-        <a href="faq.html" class="block font-bold">FAQ</a>
+<nav class="flex justify-between items-center px-6 uppercase text-xs tracking-widest">
+    <!-- Navigation Links (Horizontally Aligned) -->
+    <div class="flex space-x-6">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="shop.html" class="hover:underline">Shop</a>
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="services.html" class="font-bold hover:underline">Services</a>
+        <a href="ombre-brows.html" class="font-bold hover:underline">Ombre Brows</a>
+        <a href="faq.html" class="hover:underline">FAQ</a>
     </div>
-    <a href="#" class="border border-black px-4 py-2 rounded-full text-xs hover:bg-black hover:text-white transition">Book Appointment</a>
+
+    <!-- Book Appointment Button -->
+    <a href="#" class="border border-black px-4 py-2 rounded-full text-xs hover:bg-black hover:text-white transition">
+        Book Appointment
+    </a>
 </nav>
 
 <!-- FAQ Section -->
@@ -87,6 +88,39 @@
 
     </div>
 </section>
+
+<footer class="bg-yellow-300 py-10 px-6">
+    <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left max-w-6xl mx-auto space-y-6 md:space-y-0">
+
+        <!-- Contact Info -->
+        <div class="space-y-2">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-phone-alt text-gray-700"></i>
+                <span class="text-gray-700 text-sm">(443) 454-8611</span>
+            </div>
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-envelope text-gray-700"></i>
+                <span class="text-gray-700 text-sm">info@lavishskinartistry.co</span>
+            </div>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex space-x-6">
+            <a href="#" class="text-gray-700 hover:text-gray-900"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="text-gray-700 hover:text-gray-900"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="text-gray-700 hover:text-gray-900"><i class="fab fa-twitter fa-lg"></i></a>
+        </div>
+
+        <!-- Business Hours -->
+        <div class="text-sm text-gray-700 space-y-1">
+            <p><strong>Hours</strong></p>
+            <p>TUE: 5:30PM - 8:30PM</p>
+            <p>WED: 10AM - 8PM</p>
+            <p>FRI: 8AM - 2PM</p>
+            <p>SAT: 9AM - 4PM</p>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
