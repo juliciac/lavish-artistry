@@ -1,3 +1,16 @@
-.aspect-square {
-    aspect-ratio: 1 / 1;
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-body bg-ivory text-gray-800;
+}
+
+h1, h2, h3, h4 {
+    @apply font-serif;
+}
+
+footer {
+    @apply bg-blush;
 }
