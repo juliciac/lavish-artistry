@@ -4,10 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAQ | Beauty Lab</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="sylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lora&family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Config using CDN -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        blush: '#f8e1e7',
+                        ivory: '#fffff0',
+                        gold: '#d4af37',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        body: ['Lora', 'serif'],
+                        mont: ['Montserrat', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
 </head>
 <body class="font-sans bg-white text-black">
 

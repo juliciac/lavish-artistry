@@ -4,12 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAQ | Lavish Skin Artistry</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="sylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lora&family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Config using CDN -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        blush: '#f8e1e7',
+                        ivory: '#fffff0',
+                        gold: '#d4af37',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        body: ['Lora', 'serif'],
+                        mont: ['Montserrat', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
 </head>
-<body class="font-sans bg-white text-black">
+<body class="bg-ivory text-gray-900 font-serif">
 
 <!-- Navigation -->
 <nav class="flex justify-between items-center px-6 uppercase text-xs tracking-widest">
@@ -35,31 +58,31 @@
 
         <!-- General FAQs -->
         <div>
-            <h2 class="text-xl font-semibold mb-6 uppercase tracking-wide">Frequently Asked Questions</h2>
+            <h2 class="bg-blush text-xl font-semibold mb-6 uppercase tracking-wide">Frequently Asked Questions</h2>
 
             <div class="space-y-6 text-sm">
                 <div>
-                    <h3 class="font-bold">IS ALL OF THE HAIR GOING TO BE GONE?</h3>
+                    <h3 class="font-bold text-gold">IS ALL OF THE HAIR GOING TO BE GONE?</h3>
                     <p>Hair grows in 3 stages and it can take up to 4 waxing treatments before all of the hair is on the same growth cycle, thus all come out togethe..</p>
                 </div>
                 <div>
-                    <h3 class="font-bold">WHAT SHOULD I DO BEFORE MY APPOINTMENT?</h3>
+                    <h3 class="font-bold text-gold">WHAT SHOULD I DO BEFORE MY APPOINTMENT?</h3>
                     <p>Be clean. Come freshly showered. Be dry. Cleanliness is appreciated, but please skip the lotion.</p>
                 </div>
                 <div>
-                    <h3 class="font-bold">EVEN IF IT’S “THAT TIME OF THE MONTH?”</h3>
+                    <h3 class="font-bold text-gold">EVEN IF IT’S “THAT TIME OF THE MONTH?”</h3>
                     <p>We’re happy to do waxing if you would like it at this time. We are not embarrassed by this at all.</p>
                 </div>
                 <div>
-                    <h3 class="font-bold">HOW LONG SHOULD MY HAIR BE?</h3>
+                    <h3 class="font-bold text-gold">HOW LONG SHOULD MY HAIR BE?</h3>
                     <p>At least 1/4 inch. To expand on that, at least 1/4 inch or 3-4 weeks since the last time you’ve shaved.</p>
                 </div>
                 <div>
-                    <h3 class="font-bold">HOW OFTEN SHOULD I GET WAXED?</h3>
+                    <h3 class="font-bold text-gold">HOW OFTEN SHOULD I GET WAXED?</h3>
                     <p>We recommend waxing every four to six weeks.</p>
                 </div>
                 <div>
-                    <h3 class="font-bold">WHAT AFTERCARE PRODUCTS SHOULD I USE?</h3>
+                    <h3 class="font-bold text-gold">WHAT AFTERCARE PRODUCTS SHOULD I USE?</h3>
                     <p>I’ve a few brands I recommend: Fur, Bushbalm, Sweet Spot Labs and Honeypot.</p>
                 </div>
             </div>
@@ -67,8 +90,9 @@
 
         <!-- Post-Wax FAQs -->
         <div>
-            <h2 class="text-xl font-semibold mb-2 uppercase tracking-wide">Post-Wax FAQ’s</h2>
-            <h3 class="font-bold text-sm uppercase mb-4">FOR 24 HOURS AFTER ANY WAXING OR UNTIL ALL REDNESS HAS SUBSIDED.</h3>
+            <h2 class="bg-blush text-xl font-semibold mb-2 uppercase tracking-wide">Post-Wax FAQ’s</h2>
+            <h3 class="text-gold font-bold text-sm uppercase mb-4">FOR 24 HOURS AFTER ANY WAXING OR UNTIL ALL REDNESS
+                HAS SUBSIDED.</h3>
 
             <ul class="list-disc list-inside text-sm space-y-2">
                 <li>Avoid prolonged sun exposure.</li>
@@ -81,18 +105,21 @@
             </ul>
 
             <div class="mt-6 space-y-4 text-sm">
-                <p><strong>BETWEEN WAXES – SKINCARE MAINTENANCE & INGROWN HAIRS</strong><br>It is not enough to simply come in once a month for your wax – it is essential that you take proper at-home care of your skin...</p>
+                <p><strong class="text-gold">BETWEEN WAXES – SKINCARE MAINTENANCE & INGROWN HAIRS</strong><br>It is
+                    not
+                    enough to
+                    simply come in once a month for your wax – it is essential that you take proper at-home care of your skin...</p>
 
-                <p><strong>TIMING! TIMING! TIMING!</strong><br>Because of the essential timing in getting the hair to grow back at the same rate, if you wax too early, the hair will grow back too early...</p>
+                <p><strong class="text-gold">TIMING! TIMING! TIMING!</strong><br>Because of the essential timing in getting the hair to grow back at the same rate, if you wax too early, the hair will grow back too early...</p>
 
-                <p><strong>DO NOT SHAVE BETWEEN WAXES</strong><br>One, this completely defeats the purpose of waxing, and two, you’re allowing your hair the chance to all grow at the same rate...</p>
+                <p><strong class="text-gold">DO NOT SHAVE BETWEEN WAXES</strong><br>One, this completely defeats the purpose of waxing, and two, you’re allowing your hair the chance to all grow at the same rate...</p>
             </div>
         </div>
 
     </div>
 </section>
 
-<footer class="bg-yellow-300 py-10 px-6">
+<footer class="bg-blush py-10 px-6">
     <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left max-w-6xl mx-auto space-y-6 md:space-y-0">
 
         <!-- Contact Info -->

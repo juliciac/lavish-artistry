@@ -3,13 +3,36 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>FAQ | Beauty Lab</title>
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <title>Ombre Brows | Lavish Skin Artistry</title>
+        <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-        <link rel="sylesheet" href="styles.css" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lora&family=Montserrat&display=swap" rel="stylesheet">
+
+        <!-- Tailwind CDN -->
         <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Custom Tailwind Config using CDN -->
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            blush: '#f8e1e7',
+                            ivory: '#fffff0',
+                            gold: '#d4af37',
+                        },
+                        fontFamily: {
+                            serif: ['"Playfair Display"', 'serif'],
+                            body: ['Lora', 'serif'],
+                            mont: ['Montserrat', 'sans-serif'],
+                        },
+                    },
+                },
+            };
+        </script>
     </head>
-    <body class="font-sans bg-white text-black">
+    <body class="bg-ivory text-gray-900 font-serif">
 
     <!-- Navigation -->
     <nav class="flex justify-between items-center px-6 uppercase text-xs tracking-widest">
@@ -19,7 +42,7 @@
             <a href="shop.html" class="hover:underline">Shop</a>
             <a href="about.html" class="hover:underline">About</a>
             <a href="services.html" class="font-bold hover:underline">Services</a>
-            <a href="ombre-brows.html" class="font-bold hover:underline">Ombre Brows</a>
+            <a href="ombre-brows.html" class="font-bold hover:underline">Ombrè Brows</a>
             <a href="faq.html" class="hover:underline">FAQ</a>
         </div>
 
@@ -30,11 +53,11 @@
     </nav>
     <main class="max-w-4xl mx-auto px-6 py-16">
 
-    <h1 class="text-4xl font-bold mb-10 text-center text-gray-900">Ombre Brows</h1>
+    <h1 class="bg-blush text-4xl font-bold mb-10 text-center text-gray-900">Ombrè Brows</h1>
 
     <!-- Section: Policies -->
     <section class="mb-12">
-        <h2 class="text-2xl font-bold mb-4 text-gold-600">Policies</h2>
+        <h2 class="text-2xl text-gold font-bold mb-4 text-gold-600">Policies</h2>
         <p class="mb-4">
             Please read the policies below to ensure you understand what you’re signing up for. Booking an appointment is an automatic acknowledgment of and agreement to these policies, so please read carefully.
         </p>
@@ -69,7 +92,7 @@
 
     <!-- Section: Benefits -->
     <section class="mb-12">
-        <h2 class="text-2xl font-bold mb-4 text-gold-600">What are the Benefits of Ombre Brows?</h2>
+        <h2 class="text-gold text-2xl font-bold mb-4 text-gold-600">What are the Benefits of Ombre Brows?</h2>
         <p class="mb-4">
             Tired of daily brow makeup? Ombre Powder Brows enhance your look with minimal effort. Benefits include:
         </p>
@@ -85,7 +108,7 @@
 
     <!-- Section: Longevity -->
     <section class="mb-12">
-        <h2 class="text-2xl font-bold mb-4 text-gold-600">How Long Do Ombre Brows Last?</h2>
+        <h2 class="text-gold text-2xl font-bold mb-4 text-gold-600">How Long Do Ombre Brows Last?</h2>
         <p>
             Ombre brows typically fade within 24–36 months. Touch-ups are available every 6 months if desired. Your artist will assess when it's time for a refresh!
         </p>
@@ -93,7 +116,7 @@
 
     <!-- Section: Precare -->
     <section class="mb-12">
-        <h2 class="text-2xl font-bold mb-4 text-gold-600">How to Prepare for an Ombre Brows Appointment</h2>
+        <h2 class="text-gold text-2xl font-bold mb-4 text-gold-600">How to Prepare for an Ombre Brows Appointment</h2>
         <p class="mb-4">
             Prep is key to great results. Follow these guidelines before your appointment:
         </p>
@@ -110,7 +133,7 @@
 
     <!-- Section: Aftercare -->
     <section>
-        <h2 class="text-2xl font-bold mb-4 text-gold-600">Ombre Brows Aftercare</h2>
+        <h2 class="text-gold text-2xl font-bold mb-4 text-gold-600">Ombre Brows Aftercare</h2>
         <p class="mb-4">
             Let your brows rest for 24 hours, keeping them dry. After that, wash gently morning and night, and apply the aftercare cream provided.
         </p>
@@ -128,7 +151,7 @@
 
     </main>
 <!-- Footer -->
-<footer class="bg-yellow-300 py-10 px-6">
+<footer class="bg-blush py-10 px-6">
     <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left max-w-6xl mx-auto space-y-6 md:space-y-0">
 
         <!-- Contact Info -->

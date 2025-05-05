@@ -3,13 +3,36 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services | Beauty Lab</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Services | Lavish SKin Artistry</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="sylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lora&family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Config using CDN -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        blush: '#f8e1e7',
+                        ivory: '#fffff0',
+                        gold: '#d4af37',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        body: ['Lora', 'serif'],
+                        mont: ['Montserrat', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
 </head>
-<body class="bg-white text-gray-900 font-serif">
+<body class="bg-ivory text-gray-900 font-serif">
 
 <!-- Logo -->
 <!--<div class="text-center py-6">-->
@@ -35,11 +58,11 @@
 
 <!-- Services Menu -->
 <section class="max-w-3xl mx-auto px-6 py-12">
-    <h1 class="text-3xl font-bold text-center uppercase mb-8 tracking-wider">The Menu</h1>
+    <h1 class="text-3xl bg-blush font-bold text-center uppercase mb-8 tracking-wider">The Menu</h1>
 
     <!-- BRAZILIAN WAXING -->
     <div class="mb-8">
-        <h2 class="text-xl font-semibold uppercase mb-4 border-b border-gray-300 pb-2">Brazilian Waxing</h2>
+        <h2 class="text-gold text-xl font-semibold uppercase mb-4 border-b border-gray-300 pb-2">Brazilian Waxing</h2>
         <ul class="space-y-2">
             <li class="flex justify-between">
                 <span>New Client Brazilian</span>
@@ -70,7 +93,8 @@
 
     <!-- FACE WAXING & EYEBROWS -->
     <div class="mb-8">
-        <h2 class="text-xl font-semibold uppercase mb-4 border-b border-gray-300 pb-2">Face Waxing & Eyebrows</h2>
+        <h2 class="text-gold text-xl font-semibold uppercase mb-4 border-b border-gray-300 pb-2">Face Waxing &
+            Eyebrows</h2>
         <ul class="space-y-2">
             <li class="flex justify-between">
                 <span>Full Face</span>
@@ -113,7 +137,7 @@
 
     <!-- BODY WAXING -->
     <div class="mb-8">
-        <h2 class="text-xl font-semibold uppercase mb-4 border-b border-gray-300 pb-2">Body Waxing</h2>
+        <h2 class="text-gold text-xl font-semibold uppercase mb-4 border-b border-gray-300 pb-2">Body Waxing</h2>
         <ul class="space-y-2">
             <li class="flex justify-between">
                 <span>Underarm</span>
@@ -156,7 +180,7 @@
     </div>
 </section>
 <!-- Footer -->
-<footer class="bg-yellow-300 py-10 px-6">
+<footer class="bg-blush py-10 px-6">
     <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left max-w-6xl mx-auto space-y-6 md:space-y-0">
 
         <!-- Contact Info -->
